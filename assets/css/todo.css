@@ -1,0 +1,241 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.main-container {
+  width: 60%;
+  height: auto;
+  margin: auto;
+  border: 2px solid black;
+  box-shadow: 0px 0px 5px 2px rgb(14, 73, 54);
+}
+
+/* header TOTO APP */
+.header {
+  padding: 10px;
+  background-color: rgb(14, 73, 54);
+}
+
+.header h1 {
+  text-align: center;
+  color: white;
+  letter-spacing: 0.2rem;
+  font-variant: small-caps;
+  margin: 10px;
+}
+
+.box-container1 {
+  border-bottom: 1px solid gray;
+}
+
+.lablebox {
+  padding: 15px 0 0 15px;
+  font-size: 20px;
+  font-weight: bold;
+  color: rgb(56, 56, 56);
+}
+
+.input-box {
+  /* border: 2px solid green; */
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 15px;
+  border: none;
+  font-size: 18px;
+}
+
+input:focus {
+  outline: none;
+}
+
+.box-container2 {
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid green; */
+}
+
+.dropdownbox {
+  /* border: 2px solid red; */
+  width: 40%;
+}
+
+.dateBox {
+  /* border: 2px solid green; */
+  width: 40%;
+}
+
+.btn-box {
+  /* border: 2px solid red; */
+  width: 20%;
+  display: grid;
+  align-items: center;
+}
+
+.drop-down select {
+  width: 90%;
+  padding: 10px;
+  border: none;
+}
+
+.drop-down select:focus {
+  outline: none;
+}
+
+.btn-box button {
+  width: 90%;
+  margin: auto;
+  border-radius: 4px;
+}
+
+.box-container3 {
+  border-bottom: 1px solid gray;
+  /* border: 2px solid red; */
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-container3 {
+  border-bottom: 1px solid gray;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.check {
+  /* border: 1px solid red; */
+  width: 10%;
+  padding: 15px;
+}
+
+.taskbox {
+  /* border: 1px solid green; */
+  width: 55%;
+}
+.taskText {
+  /* border: 1px solid red; */
+  padding: 5px;
+  color: rgb(56, 56, 56);
+  font-weight: bold;
+}
+
+.taskDate {
+  /* border: 1px solid red; */
+  padding: 5px;
+}
+
+.taskDate i {
+  padding-right: 5px;
+  color: gray;
+}
+
+.categ {
+  width: 20%;
+  /* border: 1px solid; */
+  padding: 15px;
+  /* background-color: rgb(0, 98, 128); */
+  margin-right: 8px;
+}
+
+#todoTaskList:nth-child(0) .categ {
+  background-color: rgb(14, 134, 74);
+}
+#todoTaskList:nth-child(1) .categ {
+  background-color: rgb(235, 118, 22);
+}
+#todoTaskList:nth-child(2) .categ {
+  background-color: rgb(56, 121, 30);
+}
+#todoTaskList:nth-child(3) .categ {
+  background-color: rgb(235, 22, 75);
+}
+
+.categ p {
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+}
+
+.del-btn {
+  width: 30%;
+  margin: 15px auto;
+}
+
+/* common button property */
+
+button {
+  width: 100%;
+  background-color: grey;
+  padding: 20px;
+  font-weight: bold;
+  color: white;
+  border: 1px solid transparent;
+}
+
+.del-btn button {
+  border-radius: 5px;
+  background-color: red;
+}
+
+@media screen and (max-width: 600px) {
+  .main-container {
+    width: 100%;
+    border: none;
+    margin: 0px;
+    padding: 0px;
+  }
+  .header {
+    width: 100%;
+  }
+  .input-box {
+    width: 80%;
+  }
+
+  .btn-box {
+    /* border: 2px solid red; */
+    width: 30%;
+  }
+
+  .btn-box button {
+    width: 95%;
+    margin: 0;
+    border-radius: 5px;
+    padding: 12px;
+  }
+
+  .del-btn {
+    width: 50%;
+    padding-bottom: 15px;
+  }
+  .taskbox {
+    /* border: 1px solid green; */
+    width: 60%;
+  }
+  .check {
+    width: 5%;
+    padding: 2px;
+  }
+  .dropdownbox {
+    width: 35%;
+  }
+  .drop-down select {
+    width: 90%;
+    padding: 10px;
+    border: none;
+  }
+  .desc {
+    padding: 14px 0 0 14px;
+    font-size: 17px;
+    font-weight: bold;
+  }
+  .categ {
+    width: 30%;
+  }
+}
